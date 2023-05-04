@@ -48,7 +48,7 @@ height: 100%;
 }
 #h1 {
     font-size: 18px;
-    color: var(--clr-white);
+    color: hsl(0, 0%, 95%);
 }
 #paragraph {
     color: hsl(0, 0%, 45%);
