@@ -42,7 +42,7 @@ main {
     padding-block: 70px;
 background-color: var(--clr-main);
 min-width: var(--sze-main);
-max-width: var(--sze-main);
+
 height: 100%;
 
 }
@@ -73,8 +73,8 @@ height: 100%;
     color: aqua;
 }
 #clock {
-    margin-top: 3px;
-}
+    padding-top: 2px;
+} 
 #days {
     padding-bottom: 8px;
     color: hsl(0, 0%, 70%);
@@ -104,4 +104,12 @@ height: 100%;
 }
 #creator-span {
     color: hsl(0, 0%, 90%);
+}
+
+
+@media screen and (min-width:700px){ body {
+    
+background-color: var(--clr-main);
+}
+    
 }
