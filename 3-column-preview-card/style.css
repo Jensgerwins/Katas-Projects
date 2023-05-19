@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+html {
+  font-family: "Big Shoulders Display", cursive;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  min-height: 100vh;
+  max-width: 900px;
+  margin: auto;
+}
+#main {
+  background-color: hsla(0, 0%, 100%, 0.75);
+
+  padding: 20px;
+}
+
+#sedans-cars {
+  border-radius: 10px 0px 0px 10px;
+  color: white;
+  padding: 40px;
+
+  background-color: hsl(31, 77%, 52%);
+}
+#sedans-Bild {
+  margin-bottom: 20px;
+}
+#header-Sedan {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+#p-Seader {
+  margin-bottom: 30px;
+}
+
+#suvs-cars {
+  padding: 40px;
+  background-color: hsl(184, 100%, 22%);
+  color: white;
+}
+#suvs-Bild {
+  margin-bottom: 20px;
+}
+#header-Suvs {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+#p-Suvs {
+  margin-bottom: 30px;
+}
+
+#luxury-cars {
+  padding: 40px;
+  color: white;
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0px 10px 10px 0px;
+}
+#luxury-Bild {
+  margin-bottom: 20px;
+}
+#header-Luxury {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+#p-Luxury {
+  margin-bottom: 30px;
+}
+#button-Seader {
+  border-radius: 30px;
+  color: hsl(31, 77%, 52%);
+  margin: 3px;
+  padding: 10px 20px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px 1px 1px black;
+}
+#button-Seader:hover {
+  background-color: hsl(31, 77%, 52%);
+  color: white;
+}
+
+#button-Suvs {
+  border-radius: 30px;
+  color: hsl(184, 100%, 22%);
+  margin: 3px;
+  cursor: pointer;
+  padding: 10px 20px;
+  box-shadow: 1px 1px 1px 1px 1px black;
+}
+#button-Suvs:hover {
+  background-color: hsl(184, 100%, 22%);
+  color: white;
+}
+#button-Luxury {
+  border-radius: 30px;
+  color: hsl(179, 100%, 13%);
+  margin: 3px;
+  cursor: pointer;
+  padding: 10px 20px;
+  box-shadow: 1px 1px 1px 1px 1px black;
+}
+
+#button-Luxury:hover {
+  background-color: hsl(179, 100%, 13%);
+  color: white;
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    flex-direction: column;
+    padding: 30px;
+  }
+  #sedans-cars {
+    border-radius: 10px 10px 0px 0px;
+  }
+  #luxury-cars {
+    border-radius: 0px 0px 10px 10px;
+  }
+}
