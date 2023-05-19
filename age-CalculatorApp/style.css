@@ -22,29 +22,23 @@ html {
 #header-wapper {
   display: flex;
   justify-content: center;
-  flex-wrap: nowrap;
+
   align-items: center;
 }
 #dayinput,
 #monthinput,
 #yearinput {
-  max-width: 5%;
-  margin-inline: 15px;
+  margin: auto;
 }
 
 #eingabe {
   text-decoration: none;
-  display: flex;
-  flex-direction: rows;
-  justify-content: center;
-  align-content: center;
 }
 #btn {
   background-color: var(--clr-purple);
   border-radius: 50%;
-  min-height: 8%;
 
-  display: flex;
+  min-height: 8%;
 
   justify-content: center;
   align-content: center;
@@ -56,10 +50,13 @@ body {
   max-width: 100%;
 }
 #cardWapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: var(--clr-background);
-  border: 2px solid red;
+
   border-radius: 8% 10% 25% 10%;
-  max-width: 80%;
 }
 #footer-Wapper {
   display: flex;
