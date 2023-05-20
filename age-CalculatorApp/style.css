@@ -1,0 +1,68 @@
+:root {
+  --clr-background: hsl(0, 0%, 100%);
+  --clr-cardBackground: hsl(0, 0%, 94%);
+  --clr-lightGrey: hsl(0, 0%, 86%);
+  --clr-smokeyGrey: hsl(0, 1%, 44%);
+  --clr-purple: hsl(259, 100%, 65%);
+
+  --sze-fontSize: 32px;
+}
+
+html {
+  font-size: var(--sze-fontSize);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  font-family: "Outfit", sans-serif;
+}
+
+#header-wapper {
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+}
+#dayinput,
+#monthinput,
+#yearinput {
+  margin: auto;
+}
+
+#eingabe {
+  text-decoration: none;
+}
+#btn {
+  background-color: var(--clr-purple);
+  border-radius: 50%;
+
+  min-height: 8%;
+
+  justify-content: center;
+  align-content: center;
+}
+body {
+  background-color: var(--clr-cardBackground);
+}
+#body {
+  max-width: 100%;
+}
+#cardWapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--clr-background);
+
+  border-radius: 8% 10% 25% 10%;
+}
+#footer-Wapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#resultDays {
+  margin-bottom: 40%;
+}
