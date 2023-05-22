@@ -8,56 +8,104 @@
 body {
   background-color: hsl(210, 46%, 95%);
 }
+.main-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10%;
+}
 
 .container_wapper {
   display: grid;
-  grid-template-columns: 2fr 1fr 0fr;
+  grid-template-columns: 35% 15%;
+  grid-template-rows: 65% 65% 65% 15%;
+  -ms-grid-column-align: center;
+  grid-template-areas:
+    "zeile1 zeile1 zeile2 zeile3"
+    "zeile4 zeile5 zeile5 zeile3";
+
+  margin-left: 35px;
 }
 
 .card-daniel {
-  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  grid-area: zeile1;
   background-color: hsl(263, 55%, 52%);
   border-radius: 10px;
-  margin: 60px;
+  margin-bottom: 25px;
+  margin-right: 25px;
+}
+.div-pattern {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.daniel-pattern {
+  height: 100px;
+  margin-right: 40px;
+
+  position: absolute;
 }
 .daniel-name {
   color: hsl(0, 0%, 80%);
-  margin-bottom: 2px;
+
+  font-size: 12px;
 }
+
 .daniel-name-section {
   color: hsl(0, 0%, 50%);
 }
 #daniel-bild {
   border-radius: 45px;
   height: 30px;
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: solid 2px hsl(263, 51%, 67%);
 }
 .daniel-article {
-  margin-bottom: 10px;
-  margin-left: 10px;
-}
-.header-daniel {
-  display: flex;
-}
-.daniel-section {
+  background-color: hsl(263, 55%, 52%);
+  margin-left: 15px;
   margin-top: 10px;
 }
+.header-daniel {
+  background-color: hsl(263, 55%, 52%);
+  display: flex;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+.daniel-section {
+  background-color: hsl(263, 55%, 52%);
+}
 .daniel-h1 {
-  color: hsl(0, 0%, 100%);
-  margin-bottom: 15px;
+  color: hsl(0, 0%, 90%);
+
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-family: Barlow Semi Condensed;
+  padding-inline: 15px;
 }
 .daniel-p {
   color: hsl(0, 0%, 70%);
+  margin-left: 15px;
+  font-size: 12px;
+  padding-bottom: 20px;
 }
 
 .card-jonattan {
-  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  grid-area: zeile2;
+  padding: 10px;
   background-color: hsl(217, 19%, 35%);
   border-radius: 10px;
-  margin: 60px;
+  margin-bottom: 25px;
+  margin-right: 25px;
 }
 .jonattan-name {
   color: hsl(0, 0%, 80%);
-  margin-bottom: 2px;
 }
 .jonattan-name-section {
   color: hsl(0, 0%, 50%);
@@ -67,32 +115,33 @@ body {
   height: 30px;
 }
 .jonattan-article {
-  margin-bottom: 30px;
-  margin-left: 10px;
+  background-color: hsl(217, 19%, 35%);
 }
 
 .header-jonattan {
-  display: flex;
+  background-color: hsl(217, 19%, 35%);
 }
 .jonattan-section {
-  margin-top: 10px;
+  background-color: hsl(217, 19%, 35%);
 }
 .jonattan-h1 {
   color: hsl(0, 0%, 100%);
-  margin-bottom: 15px;
 }
 .jonattan-p {
   color: hsl(0, 0%, 70%);
+  font-size: 12px;
+  padding-bottom: 20px;
 }
 
 .card-kira {
-  padding: 40px;
+  grid-area: zeile3;
+  max-width: 70%;
   background-color: hsl(0, 0%, 100%);
   border-radius: 10px;
+  padding: 10px;
 }
 .kira-name {
   color: hsl(0, 0%, 80%);
-  margin-bottom: 2px;
 }
 .kira-name-section {
   color: hsl(0, 0%, 50%);
@@ -102,20 +151,81 @@ body {
   height: 30px;
 }
 .kira-article {
-  margin-bottom: 30px;
-  margin-left: 10px;
+  background-color: aliceblue;
 }
 
-.header-kira {
-  display: flex;
-}
 .kira-section {
-  margin-top: 10px;
+  background-color: aliceblue;
 }
 .kira-h1 {
   color: hsl(0, 0%, 100%);
-  margin-bottom: 15px;
 }
 .kira-p {
+  color: hsl(0, 0%, 70%);
+}
+
+.card-janette {
+  grid-area: zeile4;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 15px;
+  gap: 0;
+}
+.janette-name {
+  color: hsl(0, 0%, 80%);
+}
+.janette-name-section {
+  color: hsl(0, 0%, 50%);
+}
+#jeanette-bild {
+  border-radius: 45px;
+
+  height: 30px;
+}
+.janette-article {
+  background-color: aliceblue;
+}
+
+.janette-section {
+  background-color: aliceblue;
+}
+.janette-h1 {
+  color: hsl(0, 0%, 100%);
+}
+.janette-p {
+  color: hsl(0, 0%, 70%);
+}
+
+.card-patrick {
+  grid-area: zeile5;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(219, 29%, 14%);
+  border-radius: 10px;
+  padding: 10px;
+}
+.patrick-name {
+  color: hsl(219, 29%, 14%);
+}
+.patrick-name-section {
+  color: hsl(219, 29%, 14%);
+}
+#patrick-bild {
+  border-radius: 45px;
+  height: 30px;
+}
+.patrick-article {
+  background-color: hsl(219, 29%, 14%);
+}
+
+.patrick-section {
+  background-color: hsl(219, 29%, 14%);
+}
+.patrick-h1 {
+  color: hsl(0, 0%, 100%);
+}
+.patrick-p {
   color: hsl(0, 0%, 70%);
 }
