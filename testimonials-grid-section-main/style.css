@@ -1,0 +1,324 @@
+* {
+  font-size: 11px;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+body {
+  background-color: hsl(210, 46%, 95%);
+}
+.main-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10%;
+}
+
+.container_wapper {
+  display: grid;
+  grid-template-columns: 35% 15%;
+  grid-template-rows: 55% 55% 55%;
+  -ms-grid-column-align: center;
+  grid-template-areas:
+    "zeile1 zeile1 zeile2 zeile3"
+    "zeile4 zeile5 zeile5 zeile3";
+
+  margin-left: 35px;
+}
+
+.card-daniel {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  grid-area: zeile1;
+  background-color: hsl(263, 55%, 52%);
+  border-radius: 10px;
+  margin-bottom: 30px;
+  margin-right: 30px;
+  position: relative;
+  box-shadow: 10px 10px 10px 10x;
+}
+
+.daniel-pattern {
+  height: 100px;
+  margin-right: 0px;
+  right: 90px;
+  top: 0;
+
+  color: aqua;
+  position: absolute;
+}
+.daniel-name {
+  color: hsl(0, 0%, 90%);
+
+  font-size: 12px;
+}
+
+.daniel-name-section {
+  color: hsl(0, 0%, 70%);
+}
+#daniel-bild {
+  border-radius: 45px;
+  height: 30px;
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: solid 2px hsl(263, 51%, 67%);
+}
+.daniel-article {
+  background-color: hsl(263, 55%, 52%);
+  margin-left: 15px;
+  margin-top: 10px;
+}
+.header-daniel {
+  background-color: hsl(263, 55%, 52%);
+  display: flex;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+.daniel-section {
+  background-color: hsl(263, 55%, 52%);
+}
+.daniel-h1 {
+  color: hsl(0, 0%, 100%, 90%);
+
+  font-size: 18px;
+  font-family: Barlow;
+  padding-inline: 15px;
+  margin-right: 10px;
+}
+.daniel-p {
+  color: hsl(0, 0%, 70%);
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 13px;
+
+  margin-inline: 15px;
+  margin-top: 15px;
+}
+
+.card-jonattan {
+  display: flex;
+  flex-direction: column;
+  grid-area: zeile2;
+  padding: 10px;
+  background-color: hsl(217, 19%, 35%);
+  border-radius: 10px;
+  margin-bottom: 30px;
+  margin-right: 30px;
+  position: relative;
+  box-shadow: 10px 10px 10px 10x;
+}
+.header-jonattan {
+  display: flex;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+.jonattan-name {
+  color: hsl(0, 0%, 80%);
+  font-size: 12px;
+}
+.jonattan-name-section {
+  color: hsl(0, 0%, 70%);
+}
+
+#jonattan-bild {
+  border-radius: 45px;
+  height: 30px;
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: solid 2px hsl(263, 51%, 67%);
+}
+.jonattan-article {
+  background-color: hsl(217, 19%, 35%);
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.jonattan-section {
+  background-color: hsl(217, 19%, 35%);
+}
+.jonattan-h1 {
+  color: hsl(0, 0%, 100%, 90%);
+
+  font-size: 18px;
+  font-family: Barlow;
+  padding-inline: 15px;
+  margin-right: 10px;
+}
+.jonattan-p {
+  color: hsl(0, 0%, 70%);
+  margin-left: 15px;
+  font-size: 13px;
+
+  margin: 15px;
+}
+
+.card-kira {
+  grid-area: zeile3;
+  max-width: 70%;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  margin-bottom: 30px;
+  margin-right: 30px;
+  position: relative;
+  box-shadow: 10px 10px 10px 10x;
+}
+.header-kira {
+  display: flex;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+.kira-name {
+  color: hsl(0, 0%, 80%);
+  font-size: 12px;
+}
+.kira-name-section {
+  color: hsl(0, 0%, 50%);
+}
+#kira-bild {
+  border-radius: 45px;
+  height: 30px;
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: solid 2px hsl(263, 51%, 67%);
+}
+.kira-article {
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.kira-section {
+  color: hsl(0, 0%, 100%);
+}
+.kira-h1 {
+  color: hsl(0, 0%, 100%, 90%);
+
+  font-size: 18px;
+  font-family: Barlow;
+  padding-inline: 15px;
+  margin-right: 10px;
+}
+.kira-p {
+  color: hsl(0, 0%, 70%);
+  margin-left: 15px;
+  font-size: 13px;
+
+  margin: 15px;
+}
+
+.card-janette {
+  grid-area: zeile4;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 15px;
+  gap: 0;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  margin-right: 30px;
+  position: relative;
+  box-shadow: 10px 10px 10px 10x;
+}
+.janette-name {
+  color: hsl(0, 0%, 80%);
+  font-size: 12px;
+}
+.header-janette {
+  display: flex;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+.janette-name-section {
+  color: hsl(0, 0%, 50%);
+}
+#jeanette-bild {
+  border-radius: 45px;
+  height: 30px;
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: solid 2px hsl(263, 51%, 67%);
+}
+.janette-article {
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.janette-section {
+  background-color: aliceblue;
+}
+.janette-h1 {
+  color: hsl(0, 0%, 100%, 90%);
+
+  font-size: 18px;
+  font-family: Barlow;
+  padding-inline: 15px;
+  margin-right: 10px;
+}
+.janette-p {
+  color: hsl(0, 0%, 70%);
+  margin-left: 15px;
+  font-size: 13px;
+
+  margin: 15px;
+}
+
+.card-patrick {
+  grid-area: zeile5;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(219, 29%, 14%);
+  border-radius: 10px;
+  margin-bottom: 30px;
+  margin-right: 30px;
+  position: relative;
+  box-shadow: 10px 10px 10px 10x;
+}
+.header-patrick {
+  display: flex;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+.patrick-name {
+  color: white;
+  font-size: 12px;
+}
+
+.patrick-name-section {
+  color: white;
+}
+#patrick-bild {
+  border-radius: 45px;
+  height: 30px;
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: solid 2px hsl(263, 51%, 67%);
+}
+.patrick-article {
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.patrick-section {
+  background-color: hsl(219, 29%, 14%);
+}
+.patrick-h1 {
+  color: hsl(0, 0%, 100%, 90%);
+
+  font-size: 18px;
+  font-family: Barlow;
+  padding-inline: 15px;
+  margin-right: 10px;
+}
+.patrick-p {
+  color: hsl(0, 0%, 70%);
+  margin-left: 15px;
+  font-size: 13px;
+
+  margin: 15px;
+}
