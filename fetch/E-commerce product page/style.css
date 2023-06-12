@@ -71,7 +71,7 @@ font-weight: 700;
 
 #contact-header {
 margin-right: 6rem;
-
+position: absolute;
 }
 
 a {
@@ -130,11 +130,12 @@ grid-template-areas:
   grid-area: header;
   margin-left: 2rem;
   border-radius: 15%;
+ 
   margin-top: 3rem;
   margin-right: 5rem;
   padding: 2rem;
   margin-bottom: 1rem;
- 
+  
  
  
 }
@@ -151,6 +152,11 @@ grid-area: product1;
    max-height: 9vh;
    max-width: 9vw;
 
+}
+#product-img-1:hover {
+    border: solid 3px var(--clr-Orange);
+ 
+  
 }
 #product-img-2 {
     display: grid;
@@ -340,6 +346,33 @@ p {
     margin-left: 1rem;
 }
 
+#warencheckout {
+    width: 24rem;
+    height: 14rem;
+    background-color: white;
+    border: solid 1px var(--Darkgrayishblue);
+    box-shadow: 2px 3px 8px 4px  var(--Darkgrayishblue);
+position: absolute;
+right: 5rem;
+top:5.5rem;
+border-radius: 15px;
+
+
+
+}
+#warencheckout > h3 {
+    font-size: 1rem;
+    
+    text-align: start;
+    margin-left: 3rem;
+    
+}
+
+#Empty-warencorp {
+    text-align: center;
+    margin-top: 4.5rem;
+    
+}
 
 
 
