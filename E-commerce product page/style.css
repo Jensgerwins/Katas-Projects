@@ -1,0 +1,345 @@
+ :root {
+
+    --Mobile: 375px;
+    --Desktop: 1440px;
+
+--clr-Orange:hsl(26, 100%, 55%);
+--clrPaleOrange:hsl(25, 100%, 94%);
+--VeryDarkBlue:hsl(220, 13%, 13%);
+--Darkgrayishblue:hsl(219, 9%, 45%);
+--Grayishblue:hsl(220, 14%, 75%);
+--Lightgrayishblue: hsl(223, 64%, 98%);
+--White:hsl(0, 0%, 100%);
+--Black:: hsl(0, 0%, 0%);
+
+--font-size--a: 11px; text-align: center; 
+--color--a: hsl(228, 45%, 44%); 
+
+--font--size:16px;
+--fontfamily:'Kumbh Sans';
+
+max-width:100vw;
+max-height:100vh;
+margin:0;
+padding:0;
+box-sizing: border-box;
+ }
+
+ html {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    max-width: 100vw;
+    max-height: 100vh;
+    font-size: var(--font--size);
+    font-family: var(--fontfamily);
+}
+body {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    max-width: 100vw;
+    max-height: 100vh;
+    font-size: var(--font--size);
+    font-family: var(--fontfamily); 
+}
+
+ #article-header {
+    
+    max-width: 100vw;
+   max-height: 40vh;
+display: flex;
+    justify-content:space-evenly;
+align-items: center;
+align-content: center;
+
+margin: 1rem;
+padding: 1rem;
+
+}
+
+#sneakers-header {
+margin-left: 3rem;
+font-size: 8rem;
+font-family: var(--fontfamily);
+font-weight: 700;
+}
+
+#warenkorb-header{
+    margin-left: 3rem;
+}
+
+#contact-header {
+margin-right: 6rem;
+
+}
+
+a {
+    text-decoration: none;
+    color: var(--Darkgrayishblue);
+   
+    font-family: var(--fontfamily);
+    font-weight: 700;
+}
+#logo-header {
+    height: 3%;
+    width: 3%;
+}
+
+#main-article{
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+    height: 100vh;
+    width: 100vw;
+}
+#section-product {
+   display: grid;
+    grid-template-columns: 0.8fr 0.8fr 0.8fr 0.8fr;
+grid-template-rows: 61% 5fr;
+grid-template-areas: 
+"header header header header"
+"product1 product2 product3 product4";
+
+
+
+
+    max-width: 70vw;
+    max-width: 60vh;
+    
+    
+   
+}
+.img-hidden {
+    display: none;
+}
+#img-div {
+    max-width: 100vw;
+   justify-items: center;
+   gap: 0.5rem;
+    display: flex;
+   
+    
+ margin-left: 4rem;
+    margin-top: 0;
+}
+#main-Pitcure {
+  max-width: 100vw;
+  max-height: 50vh;
+  display: grid;
+  grid-area: header;
+  margin-left: 2rem;
+  border-radius: 15%;
+  margin-top: 3rem;
+  margin-right: 5rem;
+  padding: 2rem;
+  margin-bottom: 1rem;
+ 
+ 
+ 
+}
+#product-img-1 {
+display: grid;
+grid-area: product1;
+     
+                max-height: 9vh;
+                max-width: 9vw;
+    border-radius: 10%;
+   justify-content: center;
+   cursor: pointer;
+   
+   max-height: 9vh;
+   max-width: 9vw;
+
+}
+#product-img-2 {
+    display: grid;
+    grid-area: product2;
+       
+        border-radius: 10%;
+        cursor: pointer;
+        max-height: 9vh;
+                max-width: 9vw;
+    
+    }
+    #product-img-3 {
+        display: grid;
+        grid-area: product3;
+     
+            border-radius: 10%;
+            cursor: pointer;
+           
+            max-height: 9vh;
+            max-width: 9vw;
+        
+        }
+        #product-img-4 {
+            display: grid;
+            grid-area: product4;
+               
+                border-radius: 10%;
+                cursor: pointer;
+                max-height: 9vh;
+                max-width: 9vw;
+            
+            }
+
+
+#info-main {
+    
+    max-width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+margin-left: 14rem;
+align-items: flex-start;
+margin-top: 6rem;
+   
+    
+}
+ 
+#h1-product {
+    text-align: start;
+    color: var(--clr-Orange);
+    font-size: var(--font--size);
+    font-weight: 700;
+    font-family: var(--fontfamily);
+    justify-self: flex-start;
+    display: flex;
+    align-items: flex-start;
+    
+}
+
+#pruct-header {
+    
+    font-size: 2rem;
+    font-family: var(--fontfamily);
+    font-weight: 700;
+    color: var(--Black);
+    margin-bottom: 3rem;
+  
+  
+}
+#pructed-header {
+    font-size: var(--font--size);
+    font-weight: 700;
+    
+    color: var(--Darkgrayishblue);
+    display: flex;
+    justify-self: flex-start;
+    justify-content: flex-start;
+    align-self: flex-start;
+    margin-bottom:1rem;
+    margin-right: 10rem;
+    margin-left: 0;
+}
+
+#start {
+    display: flex;
+    justify-content: flex-start;
+}
+#prozente {
+    display: flex;
+    
+}
+#old-price {
+    text-decoration: line-through;
+    display: flex;
+    margin-top: 1rem;
+  
+    align-self: flex-start;
+    justify-self:end;
+
+}
+#new-price {
+    color: var(--Black);
+    font-size: 2rem;
+}
+#price-prozent {
+    color: var(--clr-Orange);
+    padding: 0.5rem;
+    background-color: var(--clrPaleOrange);
+    margin-left: 3rem;
+}
+
+
+#button-feld {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+}
+
+#product-button {
+    background-color: var(--clr-Orange);
+    padding-block: 0.8rem;
+    display: flex;
+    justify-content: center;
+    padding-inline: 6rem;
+    border-radius: 0.5rem;
+    margin-left: 1rem;
+    color: white;
+    font-size: var(--font--size);
+    font-family: var(--fontfamily);
+    font-weight: 700px;
+    cursor: pointer;
+
+}
+
+#product-minus {
+    text-align: center;
+    
+    padding-inline: 1rem;
+    background-color: var(--White);
+    color: var(--clr-Orange);
+    font-size: 2rem;
+    cursor: pointer;
+    margin-left: 3rem;
+}
+p {
+    margin-block: 0px;
+    text-align: start;
+}
+
+#product-anzahl {
+    
+    background-color: var(--White);
+    color: black;
+  border: solid black 1px;
+  padding-block: 0.6rem;
+  padding-inline: 1rem;
+    font-size: 1rem;
+   
+    
+}
+#product-plus {
+    text-align: center;
+    cursor: pointer;
+    padding-inline: 1rem;
+    background-color: var(--White);
+    color: var(--clr-Orange);
+    font-size: 2rem;
+    
+   
+}
+#minus-feld {
+    background-color: var(--White);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+
+#product-button-svg {
+   margin-right: 3rem;
+   fill: white;
+}
+
+#product-button-addtoCart {
+    margin-left: 1rem;
+}
+
+
+
+
