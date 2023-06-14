@@ -67,17 +67,20 @@ font-weight: 700;
 
 #warenkorb-header{
     margin-left: 3rem;
+    cursor: pointer;
+
 }
 
 #contact-header {
 margin-right: 6rem;
 position: absolute;
+cursor: pointer;
 }
 
 a {
     text-decoration: none;
     color: var(--Darkgrayishblue);
-   
+   cursor: pointer;
     font-family: var(--fontfamily);
     font-weight: 700;
 }
@@ -346,7 +349,7 @@ p {
     margin-left: 1rem;
 }
 
-#warencheckout {
+#warencheckout{
     width: 24rem;
     height: 14rem;
     background-color: white;
@@ -356,22 +359,27 @@ position: absolute;
 right: 5rem;
 top:5.5rem;
 border-radius: 15px;
+display: none;
+
 
 
 
 }
-#warencheckout > h3 {
+#warenheader-h3 {
     font-size: 1rem;
-    
+  
     text-align: start;
     margin-left: 3rem;
     
+}
+#warenheader {
+    border-bottom:solid 1px var(--Darkgrayishblue);
 }
 
 #Empty-warencorp {
     text-align: center;
     margin-top: 4.5rem;
-    
+   
 }
 
 
