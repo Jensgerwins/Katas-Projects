@@ -17,7 +17,7 @@ let aktuelerpreis = 125.00;
 
 
 
-warenSvg1.addEventListener("toggle", warenkorbCheck);
+warenSvg1.addEventListener("click", warenkorbCheck);
 
 plusbtn.addEventListener("click", () => {
     anzahl = anzahl + 1;
