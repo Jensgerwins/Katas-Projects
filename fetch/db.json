@@ -1,0 +1,28 @@
+{
+  "groups": [
+    {
+      "id": "dbf7e73b",
+      "title": "JavaScript"
+    },
+    {
+      "id": "b5604598",
+      "title": "CSS"
+    },
+    {
+      "id": "9e168fd5",
+      "title": "HTML"
+    },
+    {
+      "id": "bf7ae994",
+      "title": "Vue"
+    },
+    {
+      "id": "a846f1af",
+      "title": "Testing"
+    },
+    {
+      "id": "4a3e7cb8",
+      "title": "Git"
+    }
+  ]
+}
