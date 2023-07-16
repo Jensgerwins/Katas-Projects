@@ -1,9 +1,12 @@
 <template>
-  <button :class="styling">{{ text }}</button>
+  <button :class="styling" @click="$emit('btn-clicked')">
+    {{ text }}
+  </button>
 </template>
 
 <script>
 export default {
+  emits: ["btn-clicked"],
   props: {
     text: {
       type: String,
@@ -11,6 +14,7 @@ export default {
     },
     variant: {
       type: String,
+      required: false,
       default: "primary",
       validator(propValue) {
         return ["primary", "secondary"].includes(propValue);
